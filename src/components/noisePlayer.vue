@@ -26,7 +26,7 @@ watch(isPlaying, (newVal, oldVal) => {
 </script>
 
 <template>
-  <div class="noise-player">
+  <div>
     <h1>{{props.noise.name}}</h1>
     <audio :id="props.noise.name"  controls loop style="display:none"></audio>
     <a-switch v-model:checked="isPlaying" />
@@ -36,8 +36,5 @@ watch(isPlaying, (newVal, oldVal) => {
 </template>
 
 <style scoped>
-.noise-player {
-  width: 70%;
-  margin: 0 auto;
-}
+
 </style>
