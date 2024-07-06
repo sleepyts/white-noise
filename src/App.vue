@@ -1,5 +1,6 @@
 <script setup>
 import {onMounted} from "vue";
+import { Analytics } from "@vercel/analytics/react"
 import NoisePlayer from "./components/noisePlayer.vue";
 
 const testObj = {
